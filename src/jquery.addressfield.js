@@ -381,7 +381,7 @@
    */
   $.fn.addressfield.validate = function(field, config) {
     var $this = $(this),
-        methodName = 'isValid_' + field,
+        methodName = 'isValid_' + field + $this.attr('name'),
         rule = {},
         message = "Please check your formatting.";
 
